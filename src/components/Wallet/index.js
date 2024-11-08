@@ -20,6 +20,7 @@ import AssetOverview from './AssetOverview';
 import Exchange from './Exchange';
 import Bridge from './Bridge';
 import NftsComponent from './Nfts';
+import PayMe from './PayMe';
 
 function Wallet() {
   const userWalletAddress = useSelector(blockchainSelectors.userWalletAddressSelector);
@@ -86,6 +87,10 @@ function Wallet() {
             <Route
               path={router.wallet.nfts}
               component={NftsComponent}
+            />
+            <Route
+              path={router.wallet.payMe}
+              componet={PayMe}
             />
             <Route
               exact
