@@ -90,7 +90,7 @@ function Wallet() {
             />
             <Route
               path={router.wallet.payMe}
-              componet={PayMe}
+              component={PayMe}
             />
             <Route
               exact
