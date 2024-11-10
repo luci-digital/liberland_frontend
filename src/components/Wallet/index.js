@@ -13,6 +13,7 @@ import styles from './styles.module.scss';
 import stylesPage from '../../utils/pagesBase.module.scss';
 import WalletOverview from './WalletOverview';
 import WalletTransactionHistory from './WalletTransactionHistory';
+import Assets from './Assets';
 
 import Card from '../Card';
 import RoleHOC from '../../hocs/RoleHOC';
@@ -79,6 +80,10 @@ function Wallet() {
             <Route
               path={router.wallet.exchange}
               component={Exchange}
+            />
+            <Route
+              path={router.wallet.assets}
+              component={Assets}
             />
             <Route
               path={router.wallet.bridge}
